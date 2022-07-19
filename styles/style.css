@@ -12,9 +12,9 @@ main{
 }
 .container{
     background-color: white;
-    height: 670px;
     width: 870px;
     padding: 30px;
+    margin-left: 30px;
 }
 .section-title{
     color: #562EFF;
@@ -57,9 +57,12 @@ hr{
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
 }
 .blog{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .blog-info{
     margin-left: 16px;
@@ -73,4 +76,34 @@ hr{
 }
 .blog-author a{
     text-decoration: none;
+}
+/* course style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.courses .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star.filled{
+    color: yellow;
+}
+.fa-star.empty{
+    color:whitesmoke;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-duration{
+    display: flex;
+    align-items: center;
+    background-color: indianred;
+    border-radius: 5px;
+}
+.course-duration span{
+    margin: 0 5px;
 }
